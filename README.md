@@ -44,3 +44,17 @@ docker volume prune
 docker network prune
 docker system prune -a --volumes
 ```
+
+### Was ist Redis
+Redis ist eine In-Memory-Datenbank und ein Key-Value Store, der extrem schnelle Datenzugriffe ermöglicht. Es wird oft als Cache, Message Broker oder NoSQL-Datenbank genutzt und unterstützt Datenpersistenz, Skalierung und Pub/Sub-Kommunikation.
+
+### Welche Ports werden genutzt?
+8000 und 5000
+
+### Was ist die Bedeutung von ENV im DOCKERFILE?
+Das `ENV`-Kommando im **Dockerfile** setzt **Umgebungsvariablen**, die während der Laufzeit im Container verfügbar sind. Diese können für Konfigurationen, Pfade oder Zugangsdaten genutzt werden.
+
+## **Beispiel**  
+```dockerfile
+ENV APP_ENV=production
+```
